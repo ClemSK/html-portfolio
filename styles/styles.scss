@@ -1,0 +1,60 @@
+body {
+  /* display: flex; */
+}
+
+h1 {
+  font-family: 'Duru Sans', sans-serif;
+}
+
+nav,
+li,
+ul {
+  font-family: 'Palanquin', sans-serif;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+h2,
+h3 {
+  font-family: 'Palanquin', sans-serif;
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+}
+
+.about-horizontal {
+  display: flex;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-item {
+}
