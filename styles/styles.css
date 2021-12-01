@@ -56,4 +56,28 @@ p {
   justify-content: space-evenly;
 }
 
+.project-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 450px;
+  height: 340px;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
