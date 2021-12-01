@@ -80,4 +80,35 @@ p {
   flex-direction: column;
 }
 
+.experience-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.experience {
+  width: 450px;
+  height: 340px;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */
