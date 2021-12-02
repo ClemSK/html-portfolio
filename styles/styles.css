@@ -1,5 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  /* display: flex; */
+  height: 100%;
+  margin: 0;
+  /* This centers our sketch horizontally. */
+  /* This centers our sketch vertically. */
+  align-items: center;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -25,10 +36,52 @@ p {
   font-family: "Prompt", sans-serif;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.home-container {
+  min-height: 100vh;
+  display: block;
+  z-index: 1;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.home-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8rem;
+  z-index: 2;
+  color: rgba(255, 0, 212, 0.7);
+}
+
+.sub-title {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  z-index: 2;
+  color: rgba(255, 136, 0, 0.7);
+}
+
+.fa-chevron-down {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 4;
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgba(50, 150, 216, 0.377);
+  transition: color 350ms ease-in-out;
+}
+
+.fa-chevron-down:hover {
+  color: rgba(50, 150, 216, 0.87);
 }
 
 .about {
@@ -57,6 +110,8 @@ p {
 }
 
 .project-section {
+  display: flex;
+  justify-content: center;
   display: flex;
   align-items: center;
   justify-content: center;
