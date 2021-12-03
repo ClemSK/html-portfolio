@@ -12,10 +12,12 @@
         href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Palanquin:wght@100&family=Prompt:wght@100&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Clem S-K</title>
 </head>
 <header>
-    <Nav>
+    <nav class="navbar">
         <ul>
             <li>
                 <div class="nav-element">Home</div>
@@ -29,9 +31,9 @@
             <li>
                 <div class="nav-element">Projects</div>
             </li>
-            <li>
+            <!-- <li>
                 <div class="nav-element">Experience</div>
-            </li>
+            </li> -->
             <li>
                 <div class="nav-element">Contact</div>
             </li>
@@ -41,26 +43,37 @@
 
 <body>
     <section id="sketch-container" class="home-container">
-        <h1 class="home-title">Clem</h1>
-        <h2 class="sub-title">Junior Software Engineer</h2>
-        <a href="#about">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-        <script src="./p5.min.js"></script>
-        <script src="sketch.js"></script>
+        <div class="home-content">
+
+            <h1 class="home-title">Clem</h1>
+            <h2 class="sub-title">Junior Developer</h2>
+            <div class="icons-container">
+                <i class="devicon-github-original skills"></i>
+                <i class="devicon-linkedin-plain skills"></i>
+                <i class="fa fa-file skills" aria-hidden="true"></i>
+            </div>
+
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
-    <section class="about">
-        <h1 class="about-title">About</h1>
-        <div class="about-horizontal">
-            <div class="column">
+    <section id="about" class="about">
+        <a href="#sketch-container">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        <h1>About</h1>
+        <h2 class="about-intro">Hello! I'm Clem, a Junior Developer</h2>
+        <div class="about-info">
+            <div class="about-pic">
                 <img src="./assets/clem.jpg" height="300" width="220" />
             </div>
-            <div class="column">
-                <h2>Hello! I'm Clem, a Junior Software Engineer</h2>
+            <div class="about-text">
                 <p>Short intro for my journey into coding</p>
                 <p>Tampa Bay Lightning (ice hockey) fan, Guitarist - do home recording, to relax I like swimming,
                     going on bike rides or rollerblading</p>
             </div>
+        </div>
     </section>
     <section class="skills">
         <h2>Skills</h2>
@@ -253,10 +266,10 @@
         </div>
     </section>
     <section class="experience-section">
-        <h2>Experience</h2>
-        <!-- <p>previous jobs</p>
+        <!--     <h2>Experience</h2>
+         <p>previous jobs</p>
         <p>Company, role, time-frame, 3 bullets / add relevant extra curricular experiences</p> -->
-        <div class="experience-container">
+        <!-- <div class="experience-container"> 
             <div class="experience">
                 <img src='./assets/_ga-logo.jpg' height="70" width="70">
                 <h3>General Assembly</h3>
@@ -271,8 +284,10 @@
                 <p>That</p>
                 <p>The other</p>
             </div>
-        </div>
+        </div> -->
     </section>
+    <script src="./p5.min.js"></script>
+    <script src="sketch.js"></script>
 </body>
 <footer class="footer-section">
     <h2>Contact</h2>
