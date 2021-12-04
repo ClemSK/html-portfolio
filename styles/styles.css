@@ -20,8 +20,22 @@ h3 {
   font-family: "Palanquin", sans-serif;
 }
 
+h2 {
+  font-size: clamp(20px, 10vw, 40px);
+  margin: 20px;
+  text-decoration: underline;
+  color: rgba(31, 97, 166, 0.8);
+}
+
+h3 {
+  color: grey;
+  font-size: clamp(15px, 15vw, 30px);
+}
+
 p {
   font-family: "Prompt", sans-serif;
+  color: grey;
+  font-weight: 500;
 }
 
 nav,
@@ -85,6 +99,7 @@ nav {
   font-size: clamp(35px, 5vw, 150px);
   z-index: 2;
   color: rgba(254, 186, 70, 0.7);
+  text-decoration: none;
 }
 
 .hero-icons {
@@ -123,19 +138,20 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 9500px;
 }
 
 .about-intro {
   display: flex;
   justify-content: center;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
-  margin-left: 150px;
+  color: grey;
+  margin: 0 20px;
 }
 
 .about-pic {
-  width: 450px;
+  width: 300px;
   height: 200px;
   margin: 25px;
   display: flex;
@@ -156,6 +172,7 @@ nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 15px;
 }
 
 .about-text {
@@ -170,6 +187,7 @@ nav {
   color: grey;
   max-width: 1000px;
   padding: 10px 10px;
+  font-size: clamp(10px, 10vw, 15px);
 }
 
 .skills {
@@ -202,7 +220,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   background-color: #fefbf0;
-  min-height: 120vh;
+  min-height: 100vh;
 }
 
 .project-container {
@@ -225,6 +243,7 @@ nav {
 
 .project-link {
   border: solid rgba(254, 186, 70, 0.7);
+  border-radius: 7px;
 }
 
 .project-link:hover {
@@ -246,6 +265,19 @@ nav {
   min-height: 20vh;
 }
 
+.fa-chevron-up {
+  padding-top: 50px;
+  z-index: 4;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #feba46;
+  transition: color 350ms ease-in-out;
+}
+
+.fa-chevron-up:hover {
+  color: rgba(253, 0, 111, 0.6);
+}
+
 .footer-icons-container {
   display: flex;
   justify-content: center;
@@ -254,6 +286,7 @@ nav {
 
 .footer-text {
   margin: 10px 20px;
+  color: grey;
 }
 
 .footer-icons {
