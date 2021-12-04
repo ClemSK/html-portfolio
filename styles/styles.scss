@@ -26,7 +26,7 @@ h3 {
 h2 {
   font-size: clamp(20px, 10vw, 40px);
   margin: 20px;
-  text-decoration: underline;
+  //   text-decoration: underline;
   color: rgba($color: #1f61a6, $alpha: 0.8);
 }
 
@@ -53,6 +53,7 @@ ul {
   padding: 0 10px;
   color: #6c15ea;
   font-size: clamp(10px, 10vw, 20px);
+  overflow-x: hidden;
 }
 ul {
   margin-right: 50px;
@@ -68,6 +69,7 @@ a {
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
   z-index: 5;
+  overflow-x: hidden;
 }
 
 nav {
@@ -160,6 +162,7 @@ nav {
   padding-bottom: 60px;
   background-color: #fefbf0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 // about-container
@@ -237,6 +240,7 @@ nav {
   flex-direction: column;
   background-color: #fefbf0;
   min-height: 50vh;
+  overflow-x: hidden;
 }
 
 .icons-container-top {
@@ -282,6 +286,7 @@ nav {
   flex-direction: column;
   background-color: #fefbf0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .project-container {
@@ -328,6 +333,7 @@ nav {
   flex-direction: column;
   background-color: #fefbf0;
   min-height: 20vh;
+  overflow-x: hidden;
 }
 
 .fa-chevron-up {
