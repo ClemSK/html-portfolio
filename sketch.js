@@ -38,7 +38,7 @@ class Particle {
   }
 }
 
-const canvasContainer = document.getElementById('sketch-container');
+const canvasContainer = document.getElementById('home');
 
 console.log(canvasContainer);
 
@@ -50,7 +50,7 @@ function setup() {
   for (let i = 0; i < width / 10; i++) {
     particles.push(new Particle());
   }
-  canvas.parent('sketch-container');
+  canvas.parent('home');
 }
 
 function draw() {
