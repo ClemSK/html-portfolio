@@ -32,6 +32,7 @@ ul {
   display: flex;
   justify-content: center;
   padding: 0 10px;
+  color: #6c15ea;
 }
 
 ul {
@@ -74,14 +75,14 @@ nav {
 
 .home-title {
   font-family: "Duru Sans", sans-serif;
-  font-size: 8rem;
+  font-size: clamp(100px, 10vw, 200px);
   z-index: 2;
   color: rgba(253, 0, 111, 0.6);
 }
 
 .sub-title {
   font-family: "Duru Sans", sans-serif;
-  font-size: 4rem;
+  font-size: clamp(35px, 5vw, 150px);
   z-index: 2;
   color: rgba(254, 186, 70, 0.7);
 }
@@ -226,6 +227,12 @@ nav {
   border: solid rgba(253, 0, 111, 0.6);
 }
 
+.project-icons {
+  font-size: clamp(15px, 2.5vw, 30px);
+  font-family: "Prompt", sans-serif;
+  color: #6c15ea;
+}
+
 .footer-section {
   display: flex;
   align-items: center;
@@ -233,6 +240,24 @@ nav {
   flex-direction: column;
   background-color: #fefbf0;
   min-height: 20vh;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 10px;
+}
+
+.footer-icons {
+  text-align: center;
+  font-size: clamp(15px, 2.5vw, 20px);
+  font-family: "Prompt", sans-serif;
+  color: #6c15ea;
+  padding: 10px 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
