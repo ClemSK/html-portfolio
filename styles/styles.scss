@@ -37,6 +37,7 @@ ul {
   display: flex;
   justify-content: center;
   padding: 0 10px;
+  color: #6c15ea;
   //   text-decoration: none;
 }
 ul {
@@ -80,7 +81,10 @@ nav {
 
 .home-title {
   font-family: 'Duru Sans', sans-serif;
-  font-size: 8rem;
+  font-size: clamp(100px, 10vw, 200px);
+  //   font-size: 200px;
+  //   font-size: 8rem;
+  //   font-size: clamp(15px, 2.5vw, 30px);
   z-index: 2;
   color: rgba($color: #fd006f, $alpha: 0.6);
   //   color: rgba(50, 150, 216, 0.685);
@@ -88,7 +92,7 @@ nav {
 
 .sub-title {
   font-family: 'Duru Sans', sans-serif;
-  font-size: 4rem;
+  font-size: clamp(35px, 5vw, 150px);
   z-index: 2;
   color: rgba($color: #feba46, $alpha: 0.7);
 }
@@ -231,7 +235,6 @@ nav {
 .icons-item {
   margin: 10px;
   color: #6c15ea;
-  //   font-size: 15px;
   font-size: clamp(15px, 2.5vw, 30px);
 }
 
@@ -273,6 +276,12 @@ nav {
   border: solid rgba($color: #fd006f, $alpha: 0.6);
 }
 
+.project-icons {
+  font-size: clamp(15px, 2.5vw, 30px);
+  font-family: 'Prompt', sans-serif;
+  color: #6c15ea;
+}
+
 // EXPERIENCE
 
 // .experience-section {
@@ -310,4 +319,26 @@ nav {
   flex-direction: column;
   background-color: #fefbf0;
   min-height: 20vh;
+}
+
+.footer-icons-container {
+  display: flex;
+  justify-content: center;
+  //   flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 10px;
+  //   padding: 20px;
+  //   display: flex;
+  //   justify-content: space-evenly;
+}
+
+.footer-icons {
+  text-align: center;
+  font-size: clamp(15px, 2.5vw, 20px);
+  font-family: 'Prompt', sans-serif;
+  color: #6c15ea;
+  padding: 10px 10px;
 }
