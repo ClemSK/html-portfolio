@@ -17,40 +17,44 @@
     <title>Clem S-K</title>
 </head>
 <header>
-    <nav class="navbar">
+    <nav id="nav" class="navbar">
         <ul>
             <li>
-                <div class="nav-element">Home</div>
+                <div class="nav-element">
+                    <a href="#home"><i class="fas fa-home"></i></a>
+                </div>
             </li>
             <li>
-                <div class="nav-element">About</div>
+                <div class="nav-element"><a href="#about">About</a></div>
             </li>
             <li>
-                <div class="nav-element">Skills</div>
+                <div class="nav-element"><a href="#skills">Skills</a></div>
             </li>
             <li>
-                <div class="nav-element">Projects</div>
+                <div class="nav-element"><a href="#projects">Project</a></div>
             </li>
             <!-- <li>
                 <div class="nav-element">Experience</div>
             </li> -->
             <li>
-                <div class="nav-element">Contact</div>
+                <div class="nav-element"><a href="#contact">Contact</a></div>
             </li>
         </ul>
     </Nav>
 </header>
 
 <body>
-    <section id="sketch-container" class="home-container">
+    <section id="home" class="home-container">
         <div class="home-content">
 
             <h1 class="home-title">Clem</h1>
             <h2 class="sub-title">Junior Developer</h2>
             <div class="icons-container">
-                <i class="devicon-github-original skills"></i>
-                <i class="devicon-linkedin-plain skills"></i>
-                <i class="fa fa-file skills" aria-hidden="true"></i>
+                <a href='https://github.com/ClemSK'><i class="devicon-github-original hero-icons"></i></a>
+                <a href="https://www.linkedin.com/in/clement-seconde-kynnersley-76b14450/"><i
+                        class="devicon-linkedin-plain hero-icons"></i></a>
+                <i class="fas fa-file-pdf hero-icons"></i>
+                <!-- <img src="./assets/cv-logos_white.png"> -->
             </div>
 
             <a href="#about">
@@ -59,9 +63,9 @@
         </div>
     </section>
     <section id="about" class="about">
-        <a href="#sketch-container">
+        <!-- <a href="#home">
             <i class="fas fa-chevron-up"></i>
-        </a>
+        </a> -->
         <h1>About</h1>
         <h2 class="about-intro">Hello! I'm Clem, a Junior Developer</h2>
         <div class="about-info">
@@ -69,25 +73,46 @@
                 <img src="./assets/clem.jpg" height="300" width="220" />
             </div>
             <div class="about-text">
-                <p>Short intro for my journey into coding</p>
-                <p>Tampa Bay Lightning (ice hockey) fan, Guitarist - do home recording, to relax I like swimming,
-                    going on bike rides or rollerblading</p>
+                <p>
+                    I'm recently graduated from the General Assembly Software Engineering
+                    Immersive bootcamp and I'm currently looking for my first Junior Developer role.
+                </p>
+                <p>
+                    My interest in programming started after reading an article about Python and started with 'Learn
+                    Python the Hard Way' which gave me a foundation to object-oriented programming and the command line.
+                    My favorite project was a text-adventure game for the terminal to hone my understanding of learning
+                    concepts.
+                    I made it absurd and laughed the whole way through and thus began my coding path.
+                    From there I wanted code full time and so enrolled in a bootcamp to accelerate my learning process.
+                </p>
+                <p>
+                    During the bootcamp I created and collaborated on 4 projects:
+                    a Canvas JavaScript game,
+                    a front end consuming the Spotify podcast API,
+                    a full-stack MERN e-commerce store
+                    and a React, Django and PostgreSQL exercise dashboard.
+                </p>
+                <p>
+                    My instructors describe me as ambitious and unafraid of working with new concepts and technologies
+                    (or lack of coding stage-fright).
+                    I would describe myself as confident and driven, able to work well as an individual contributor and
+                    as part of a team and with strong communication skills.
+                </p>
+                <p>
+                    My next project will be using Firebase and TypeScript to produce an app using the Test Driven
+                    Development method and Jest testing suite.
+                </p>
+                <p>
+                    Outside of coding I follow Tampa Bay Lightning (ice hockey) and play and record guitar. I enjoy
+                    swimming, going on bike rides or rollerblading.
+                </p>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <h2>Skills</h2>
-        <!-- <p>have some icons to show off which tech I have used and are animated</p>
-            <p>js, react, html, css, sass, mongo, express, node, python, django, yarn, postgres, git, github, heroku, netlify, slack, trello, jira, figma, jest, postman</p> -->
+        <!-- <p>have some icons to show off which tech I have used and are animated</p> -->
         <div class="icons-container">
-            <div class="icons-item">
-                <i class="devicon-javascript-plain"></i>
-                <p>JavaScript</p>
-            </div>
-            <div class="icons-item">
-                <i class="devicon-react-original"></i>
-                <p>React</p>
-            </div>
             <div class="icons-item">
                 <i class="devicon-html5-plain-wordmark"></i>
                 <p>HTML</p>
@@ -101,25 +126,31 @@
                 <p>Sass</p>
             </div>
             <div class="icons-item">
-                <i class="devicon-mongodb-plain"></i>
-                <p>MongoDB</p>
+                <i class="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="icons-item">
+                <i class="devicon-react-original"></i>
+                <p>React</p>
             </div>
             <div class="icons-item">
                 <i class="devicon-express-original"></i>
                 <p>Express</p>
             </div>
             <div class="icons-item">
+                <i class="devicon-nodejs-plain"></i>
+                <p>Node</p>
+            </div>
+            <div class="icons-item">
+                <i class="devicon-python-plain"></i>
+                <p>Python</p>
+            </div>
+            <div class="icons-item">
                 <i class="devicon-django-plain"></i>
                 <p>Django</p>
             </div>
-            <div class="icons-item">
-                <i class="devicon-yarn-plain"></i>
-                <p>Yarn</p>
-            </div>
-            <div class="icons-item">
-                <i class="devicon-postgresql-plain"></i>
-                <p>PostgreSQL</p>
-            </div>
+        </div>
+        <div class="icons-container">
             <div class="icons-item">
                 <i class="devicon-git-plain"></i>
                 <p>Git</p>
@@ -128,26 +159,32 @@
                 <i class="devicon-github-original"></i>
                 <p>Github</p>
             </div>
-        </div>
-        <div class="icons-container">
+            <div class="icons-item">
+                <i class="devicon-mongodb-plain"></i>
+                <p>MongoDB</p>
+            </div>
+            <div class="icons-item">
+                <i class="devicon-postgresql-plain"></i>
+                <p>PostgreSQL</p>
+            </div>
             <div class="icons-item">
                 <i class="devicon-heroku-original"></i>
                 <p>Heroku</p>
             </div>
-            <div class="icons-item">
+            <!-- <div class="icons-item">
                 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
                 <span class="iconify" data-icon="logos:netlify"></span>
 
-                <p>Netlify</p>
-            </div>
-            <div class="icons-item">
+                <p>Netlify</p> -->
+            <!-- </div> -->
+            <!-- <div class="icons-item">
                 <i class="devicon-slack-plain"></i>
                 <p>Slack</p>
-            </div>
-            <div class="icons-item">
+            </div> -->
+            <!-- <div class="icons-item">
                 <i class="devicon-trello-plain"></i>
                 <p>Trello</p>
-            </div>
+            </div> -->
             <div class="icons-item">
                 <i class="devicon-jira-plain"></i>
                 <p>Jira</p>
@@ -160,36 +197,37 @@
                 <i class="devicon-jest-plain"></i>
                 <p>Jest</p>
             </div>
-            <div class="icons-item">
+            <!-- <div class="icons-item">
                 <i class="devicon-vscode-plain"></i>
                 <p>VS Code</p>
-            </div>
+            </div> -->
             <div class="icons-item">
                 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
                 <span class="iconify" data-icon="simple-icons:postman"></span>
                 <p>Postman</p>
             </div>
-            <div class="icons-item">
-                <i class="devicon-nodejs-plain"></i>
-                <p>Node</p>
-            </div>
-            <div class="icons-item">
+
+            <!-- <div class="icons-item">
                 <i class="devicon-nodejs-plain"></i>
                 <p>Mongoose</p>
-            </div>
+            </div> -->
         </div>
     </section>
-    <section class="project-section">
+    <section id="projects" class="project-section">
         <h2>Projects</h2>
         <div class="project-container">
             <div class="project">
                 <div>
-                    <img src='./assets/summit.png' alt="project image" height="200" width="300">
+                    <a href="https://clemsk.github.io/Canvas-Game/">
+                        <img class="project-link" src='./assets/poppin-bubbles.png' alt="project image" height="200"
+                            width="300">
+                    </a>
                 </div>
                 <div>
                     <h3>Poppin' Bubbles</h3>
                     <p>Solo project</p>
-                    <p>Canvas based JavaScript game</p>
+                    <p>Canvas based game</p>
+                    <a href="https://github.com/ClemSK/Canvas-Game"><i class="devicon-github-original "></i></a>
                     <!-- <p>Pair Programming: In two weeks, we built a React app which consumed an external API. The project was
                         invaluable in terms of
                         learning to pair-code and being able to share our different strengths and skills. It also taught me
@@ -202,12 +240,16 @@
 
             <div class="project">
                 <div>
-                    <img src='./assets/summit.png' alt="project image" height="200" width="300">
+                    <a href="https://spotify-poscast-app.netlify.app">
+                        <img class="project-link" src='./assets/spotify-podcasts.png' alt="project image" height="200"
+                            width="300">
+                    </a>
                 </div>
                 <div>
                     <h3>Spotify Podcasts</h3>
                     <p>Pair project</p>
                     <p>Consuming a 3rd party API</p>
+                    <a href="https://github.com/ClemSK/spotify-podcast-app"><i class="devicon-github-original "></i></a>
                     <!-- <p>Pair Programming: In two weeks, we built a React app which consumed an external API. The project was
                         invaluable in terms of
                         learning to pair-code and being able to share our different strengths and skills. It also taught me
@@ -220,11 +262,19 @@
 
             <div class="project">
                 <div>
-                    <img src='./assets/summit.png' alt="project image" height="200" width="300">
+                    <a href="https://panic-buying-ecomm-shop.netlify.app">
+                        <img class="project-link" src='./assets/panic-buyers.png' alt="project image" height="200"
+                            width="300">
+                    </a>
                 </div>
                 <div>
                     <h3>Panic Buyers</h3>
-                    <p>Full-stack Mern app with Crud functionality</p>
+                    <p>3 person project</p>
+                    <p>MERN + CRUD</p>
+                    <a href="https://github.com/ClemSK/Be-Panic-App-Front-End"><i
+                            class="devicon-github-original ">front-end</i></a>
+                    <a href="https://github.com/ClemSK/Be-Panic-App-Back-End"><i
+                            class="devicon-github-original ">back-end</i></a>
                     <!-- <img href="img of the app" /> -->
                     <!-- <a href="the link to the app"> -->
                     <!-- <p>Full-Stack MERN app with CRUD functionality. As a group, we created an app which had the aim of
@@ -243,12 +293,18 @@
 
             <div class="project">
                 <div>
-                    <img src='./assets/summit.png' alt="project image" height="200" width="300">
+                    <a href="https://summit-exercise-dashboard.netlify.app/">
+                        <img class="project-link" src='./assets/summit.png' alt="project image" height="200"
+                            width="300">
+                    </a>
                 </div>
                 <div>
                     <h3>Summit</h3>
                     <p>Pair Project</p>
-                    <p>Full-stack app with Django and PostgreSQL</p>
+                    <p>Django + PostgreSQL</p>
+                    <a href="https://github.com/ClemSK/Summit2"><i class="devicon-github-original ">front-end</i></a>
+                    <a href="https://github.com/ClemSK/summit2-backend"><i
+                            class="devicon-github-original ">back-end</i></a>
                     <!-- <img href="img of the app" />
                     <a href="the link to the app"> -->
                     <!-- <p>Full-Stack MERN app with CRUD functionality. As a group, we created an app which had the aim of
@@ -289,11 +345,15 @@
     <script src="./p5.min.js"></script>
     <script src="sketch.js"></script>
 </body>
-<footer class="footer-section">
+<footer id="contact" class="footer-section">
     <h2>Contact</h2>
     <div>
         <p>I'd love to hear from you, check out my Github or get in touch for more info!</p>
-        <!-- <p>have icons that link to git, linkedin, email plugin</p> -->
+        <a href='https://github.com/ClemSK'><i class="devicon-github-original"></i></a>
+        <a href="https://www.linkedin.com/in/clement-seconde-kynnersley-76b14450/"><i
+                class="devicon-linkedin-plain"></i></a>
+        <a href="mailto:c.sec.kyn@gmail.com"><i class="fas fa-envelope"></i></a>
+
     </div>
     <p>made by Clem &copy</p>
 </footer>
