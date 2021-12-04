@@ -47,6 +47,7 @@ ul {
   justify-content: center;
   padding: 0 10px;
   color: #6c15ea;
+  font-size: clamp(10px, 10vw, 20px);
 }
 
 ul {
@@ -92,6 +93,8 @@ nav {
   font-size: clamp(100px, 10vw, 200px);
   z-index: 2;
   color: rgba(253, 0, 111, 0.6);
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .sub-title {
@@ -100,12 +103,16 @@ nav {
   z-index: 2;
   color: rgba(254, 186, 70, 0.7);
   text-decoration: none;
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 
 .hero-icons {
   color: rgba(254, 251, 240, 0.8);
   padding: 0 10px;
   font-size: 30px;
+  animation: fadeIn;
+  animation-duration: 8s;
 }
 
 .fa-chevron-down {
@@ -115,6 +122,9 @@ nav {
   cursor: pointer;
   color: rgba(254, 186, 70, 0.7);
   transition: color 350ms ease-in-out;
+  animation: bounceIn;
+  animation-duration: 1s;
+  --animate-repeat: 10;
 }
 
 .fa-chevron-down:hover {
@@ -148,6 +158,8 @@ nav {
   font-weight: 400;
   color: grey;
   margin: 0 20px;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 
 .about-pic {
@@ -158,6 +170,8 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: slideInLeft;
+  animation-duration: 4s;
 }
 .about-pic img {
   border-radius: 100%;
@@ -199,19 +213,38 @@ nav {
   min-height: 50vh;
 }
 
-.icons-container {
+.icons-container-top {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px;
   margin: 20px;
+  animation: slideInUp;
+  animation-duration: 2s;
+}
+
+.icons-container-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin: 20px;
+  animation: slideInUp;
+  animation-duration: 4s;
 }
 
 .icons-item {
   margin: 10px;
   color: #6c15ea;
   font-size: clamp(15px, 2.5vw, 30px);
+}
+
+.icons-item:hover {
+  animation: bounce;
+  animation-duration: 1s;
+  color: #feba46;
 }
 
 .project-section {
@@ -256,6 +289,10 @@ nav {
   color: #6c15ea;
 }
 
+.project-icons:hover {
+  color: #feba46;
+}
+
 .footer-section {
   display: flex;
   align-items: center;
@@ -296,6 +333,10 @@ nav {
   font-family: "Prompt", sans-serif;
   color: #6c15ea;
   padding: 10px 10px;
+}
+
+.footer-icons:hover {
+  color: #feba46;
 }
 
 /*# sourceMappingURL=styles.css.map */

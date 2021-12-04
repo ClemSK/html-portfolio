@@ -52,7 +52,7 @@ ul {
   justify-content: center;
   padding: 0 10px;
   color: #6c15ea;
-  //   text-decoration: none;
+  font-size: clamp(10px, 10vw, 20px);
 }
 ul {
   margin-right: 50px;
@@ -98,6 +98,8 @@ nav {
   font-size: clamp(100px, 10vw, 200px);
   z-index: 2;
   color: rgba($color: #fd006f, $alpha: 0.6);
+  animation: fadeIn;
+  animation-duration: 2s;
 }
 
 .sub-title {
@@ -106,12 +108,16 @@ nav {
   z-index: 2;
   color: rgba($color: #feba46, $alpha: 0.7);
   text-decoration: none;
+  animation: fadeIn;
+  animation-duration: 5s;
 }
 
 .hero-icons {
   color: rgba($color: #fefbf0, $alpha: 0.8);
   padding: 0 10px;
   font-size: 30px;
+  animation: fadeIn;
+  animation-duration: 8s;
 }
 
 .fa-chevron-down {
@@ -121,6 +127,9 @@ nav {
   cursor: pointer;
   color: rgba($color: #feba46, $alpha: 0.7);
   transition: color 350ms ease-in-out;
+  animation: bounceIn;
+  animation-duration: 1s;
+  --animate-repeat: 10;
 }
 .fa-chevron-down:hover {
   color: rgba($color: #fd006f, $alpha: 0.6);
@@ -170,6 +179,8 @@ nav {
   font-weight: 400;
   color: grey;
   margin: 0 20px;
+  animation: slideInLeft;
+  animation-duration: 2s;
 }
 
 // about-item
@@ -181,6 +192,8 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: slideInLeft;
+  animation-duration: 4s;
   img {
     border-radius: 100%;
     // border: 2px white solid;
@@ -226,19 +239,38 @@ nav {
   min-height: 50vh;
 }
 
-.icons-container {
+.icons-container-top {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px;
   margin: 20px;
+  animation: slideInUp;
+  animation-duration: 2s;
+}
+
+.icons-container-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin: 20px;
+  animation: slideInUp;
+  animation-duration: 4s;
 }
 
 .icons-item {
   margin: 10px;
   color: #6c15ea;
   font-size: clamp(15px, 2.5vw, 30px);
+}
+
+.icons-item:hover {
+  animation: bounce;
+  animation-duration: 1s;
+  color: rgba($color: #feba46, $alpha: 1);
 }
 
 // PROJECTS
@@ -283,6 +315,9 @@ nav {
   font-family: 'Prompt', sans-serif;
   color: #6c15ea;
 }
+.project-icons:hover {
+  color: rgba($color: #feba46, $alpha: 1);
+}
 
 // FOOTER
 
@@ -326,4 +361,8 @@ nav {
   font-family: 'Prompt', sans-serif;
   color: #6c15ea;
   padding: 10px 10px;
+}
+
+.footer-icons:hover {
+  color: rgba($color: #feba46, $alpha: 1);
 }
