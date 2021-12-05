@@ -31,14 +31,14 @@ h2 {
 }
 
 h3 {
-  color: grey;
+  color: rgb(119, 119, 119);
   font-size: clamp(15px, 15vw, 30px);
 }
 
 p {
   font-family: 'Prompt', sans-serif;
-  color: grey;
-  font-weight: 500;
+  color: rgb(119, 119, 119);
+  font-weight: 900;
 }
 
 // NAV
@@ -137,18 +137,6 @@ nav {
   color: rgba($color: #fd006f, $alpha: 0.6);
 }
 
-// .fa-chevron-up {
-//   //   position: absolute;
-//   top: 5%;
-//   left: 50%;
-//   //   z-index: 4;
-//   font-size: 3rem;
-//   cursor: pointer;
-//   color: rgba(50, 150, 216, 0.377);
-//   transition: color 350ms ease-in-out;
-//   display: flex;
-// }
-
 // ABOUT
 
 // about-section
@@ -180,7 +168,7 @@ nav {
   justify-content: center;
   font-size: 30px;
   font-weight: 400;
-  color: grey;
+  color: rgb(119, 119, 119);
   margin: 0 20px;
   animation: slideInLeft;
   animation-duration: 2s;
@@ -224,10 +212,10 @@ nav {
   flex-direction: column;
   p {
     font-weight: 600;
-    color: grey;
+    color: rgb(119, 119, 119);
     max-width: 1000px;
     padding: 10px 10px;
-    font-size: clamp(10px, 10vw, 15px);
+    font-size: clamp(12px, 10vw, 18px);
   }
 }
 
@@ -357,7 +345,9 @@ nav {
 
 .footer-text {
   margin: 10px 20px;
-  color: grey;
+  color: rgb(119, 119, 119);
+  font-weight: 800;
+  font-size: clamp(12px, 10vw, 18px);
 }
 
 .footer-icons {
