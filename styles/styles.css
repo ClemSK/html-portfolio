@@ -209,6 +209,10 @@ nav {
   font-size: clamp(12px, 10vw, 18px);
 }
 
+.about-links {
+  color: #6c15ea;
+}
+
 .skills {
   display: flex;
   justify-content: center;
