@@ -7,11 +7,14 @@
   //   width: min(1000px, calc(70% + 100px));
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
   margin: 0;
   align-items: center;
-  scroll-behavior: smooth;
 }
 
 h1 {
