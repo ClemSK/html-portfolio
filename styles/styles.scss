@@ -225,6 +225,11 @@ nav {
 .about-links {
   color: #6c15ea;
 }
+.about-links:hover {
+  color: rgba($color: #fd006f, $alpha: 0.6);
+  text-decoration: underline;
+  text-decoration-style: double;
+}
 
 // SKILLS
 
