@@ -310,6 +310,27 @@ nav {
   color: #feba46;
 }
 
+.interest-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fefbf0;
+  min-height: 20vh;
+  overflow-x: hidden;
+}
+
+.interest-text h2 {
+  text-align: center;
+}
+.interest-text p {
+  font-weight: 600;
+  color: #777777;
+  max-width: 1000px;
+  padding: 10px 10px;
+  font-size: clamp(12px, 10vw, 18px);
+}
+
 .footer-section {
   display: flex;
   align-items: center;
