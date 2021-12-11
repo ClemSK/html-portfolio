@@ -153,7 +153,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 9500px;
+  max-width: 950px;
 }
 
 .about-intro {
@@ -320,14 +320,19 @@ nav {
   overflow-x: hidden;
 }
 
+.interest-text {
+  padding: 10px 20px;
+  justify-content: center;
+  align-self: center;
+}
 .interest-text h2 {
   text-align: center;
 }
 .interest-text p {
   font-weight: 600;
   color: #777777;
-  max-width: 1000px;
-  padding: 10px 10px;
+  max-width: 800px;
+  padding: 10px 50px;
   font-size: clamp(12px, 10vw, 18px);
 }
 
@@ -361,7 +366,7 @@ nav {
 }
 
 .footer-text {
-  margin: 10px 20px;
+  margin: 10px 50px;
   color: #777777;
   font-weight: 800;
   font-size: clamp(12px, 10vw, 18px);
